@@ -1,39 +1,57 @@
 "use client";
 
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-10 px-4 mt-12">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0 text-center md:text-left">
-          <h2 className="text-2xl font-bold">LiteMart</h2>
-          <p className="text-sm mt-1">
-            © {new Date().getFullYear()} LiteMart. All rights reserved.
+    <footer className="bg-blue-900 text-white py-10 mt-12">
+      <div className="mx-4 md:mx-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Company Info with Logo */}
+        <div className="text-center md:text-left">
+          <div className="flex items-center justify-center md:justify-start mb-4">
+            <img 
+              src="/litemartlogo.png" 
+              alt="LiteMart Logo" 
+              className="h-10 w-10 mr-3"
+            />
+            <h2 className="text-2xl font-bold">LiteMart</h2>
+          </div>
+          <p className="text-blue-200">
+            Your trusted online shopping destination for quality products at affordable prices.
           </p>
         </div>
 
-        <div className="flex space-x-6">
-          <Link href="/" className="hover:text-blue-300">
-            Home
-          </Link>
-          <Link href="/products" className="hover:text-blue-300">
-            Products
-          </Link>
-          <Link href="/dashboard" className="hover:text-blue-300">
-            Dashboard
-          </Link>
-          <Link href="/login" className="hover:text-blue-300">
-            Login
-          </Link>
+        {/* Quick Links */}
+        <div className="text-center">
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <div className="flex flex-col space-y-2">
+            <a href="/" className="text-blue-200 hover:text-white transition-colors">
+              Home
+            </a>
+            <a href="/products" className="text-blue-200 hover:text-white transition-colors">
+              All Products
+            </a>
+            <a href="/about" className="text-blue-200 hover:text-white transition-colors">
+              About Us
+            </a>
+            <a href="/contact" className="text-blue-200 hover:text-white transition-colors">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        {/* Contact Info */}
+        <div className="text-center md:text-right">
+          <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+          <div className="text-blue-200">
+            <p>Email: support@litemart.com</p>
+            <p className="mt-2">Phone: +8801881234567</p>
+            <p className="mt-2">Hours: Mon-Fri, 9AM-9PM</p>
+          </div>
         </div>
       </div>
 
-      <div className="mt-6 text-center text-sm text-blue-200">
-        Follow us on social media:  
-        <a href="#" className="ml-2 hover:text-white">Facebook</a>,  
-        <a href="#" className="ml-2 hover:text-white">Twitter</a>,  
-        <a href="#" className="ml-2 hover:text-white">Instagram</a>
+      {/* Copyright */}
+      <div className="mt-8 pt-6 border-t border-blue-700 text-center text-sm text-blue-200">
+        <p>© {new Date().getFullYear()} LiteMart. All rights reserved.</p>
       </div>
     </footer>
   );
