@@ -22,7 +22,7 @@ export default function Banner() {
         </div>
         
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-400">LiteMart</span>
+          Welcome to  <span className="text-blue-500">Lite</span><span className="text-blue-400">Mart</span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed">
