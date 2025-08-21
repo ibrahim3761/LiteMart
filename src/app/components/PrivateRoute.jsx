@@ -19,7 +19,7 @@ export default function PrivateRoute({ children }) {
   if (status === "loading" || !session) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-blue-700 text-lg">Loading...</p>
+        <div className="loader border-4 border-blue-500 border-dashed rounded-full w-12 h-12 animate-spin"></div>
       </div>
     );
   }
