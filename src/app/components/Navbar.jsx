@@ -19,7 +19,7 @@ function NavbarContent() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/products", label: "Products" },
-    { href: "/dashboard", label: "Dashboard", auth: true },
+    { href: "/dashboard/add-products", label: "Dashboard", auth: true },
   ];
 
   const renderLinks = (isMobile = false) =>
