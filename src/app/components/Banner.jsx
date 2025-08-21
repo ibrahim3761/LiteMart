@@ -35,8 +35,8 @@ export default function Banner() {
             className="group relative bg-white text-blue-700 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           >
             Explore Products
-            <span className="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 rounded-full bg-amber-400 animate-ping"></span>
-            <span className="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 rounded-full bg-amber-400"></span>
+            <span className="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 rounded-full bg-blue-500 animate-ping"></span>
+            <span className="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 rounded-full bg-blue-500"></span>
           </a>
         </div>
       </div>
